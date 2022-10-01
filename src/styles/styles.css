@@ -1,0 +1,71 @@
+:root{
+    /* colors */
+    --background-color: rgba(9, 10, 14, 0.928);
+    --mainCard-color: rgba(222, 219, 219, 0.921);
+    --header-color: rgba(86, 135, 215, 0.875);
+    /* --header-color: rgba(214, 78, 81, 0.874); */
+    --secondaryText-color: rgba(24, 25, 23, 0.879);
+    --button-color: rgba(56, 58, 70, 0.33);
+    --input-color: rgba(33, 32, 32, 0.152);
+
+    /* fonts */
+    --inter: 'Inter', sans-serif;
+    --merriweather: 'Merriweather Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+    size: 100vh 100vw;
+}
+.mainCard{
+    margin: auto;
+    width: 80vw;
+    background-color: var(--mainCard-color);
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title > h1{
+    font: 600 200% var(--roboto);
+    color: white;
+    font-style: italic;
+    background-color: var(--header-color);
+    margin: auto;
+    text-align: center;
+    border-radius: 21px 21px 0px 0px;
+
+}
+.title > span{
+    padding: 2px;
+    display: flex;
+
+    color: var(--secondaryText-color);
+    text-align: center;
+}
+
+.inputDiv{
+    display: grid;
+    /* justify-content: center; */
+    margin: auto;
+    width: auto;
+}
+.inputDiv > input{
+    position: relative;
+    height: 10vh;
+    text-align: center;
+    border: none;
+    background-color: var(--input-color);
+    font: 400 80% var(--inter);
+}
+.inputDiv > button{
+    width: 100%;
+    border: 0;
+    background-color: var(--button-color);
+    border-radius: 0px 0px 21px 21px;
+}
+.inputDiv > button > img {
+    fill: red;
+}
