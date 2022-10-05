@@ -6,7 +6,8 @@
     /* --header-color: rgba(214, 78, 81, 0.874); */
     --secondaryText-color: rgba(24, 25, 23, 0.879);
     --button-color: rgba(56, 58, 70, 0.33);
-    --input-color: rgba(33, 32, 32, 0.152);
+    --button-color-hover: rgba(56, 58, 70, 0.408);
+    --input-color: rgba(193, 193, 193, 0.152);
 
     /* fonts */
     --inter: 'Inter', sans-serif;
@@ -20,6 +21,7 @@ body{
 }
 .mainCard{
     margin: auto;
+    margin-top: 3vh;
     width: 80vw;
     background-color: var(--mainCard-color);
     border-radius: 22px;
@@ -57,8 +59,11 @@ body{
     height: 10vh;
     text-align: center;
     border: none;
-    background-color: var(--input-color);
+    background-color: var(--mainCard-color);
     font: 400 80% var(--inter);
+}
+.inputDiv > input:hover{
+    background-color: var(--input-color);
 }
 .inputDiv > button{
     width: 100%;
@@ -66,6 +71,25 @@ body{
     background-color: var(--button-color);
     border-radius: 0px 0px 21px 21px;
 }
-.inputDiv > button > img {
-    fill: red;
+.inputDiv > button:hover  {
+    background-color: var(--button-color-hover);
+}
+
+/* TASK CARD */
+.taskTitle{
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    font: 500 150% var(--roboto);
+    color: white;
+    background-color: var(--header-color);
+    border-radius: 21px 21px 0px 0px;
+}
+.taskText{
+    font: 500 90% var(--inter);
+    color: var(--secondaryText-color);
+    text-align: center;
+    max-height: 11vh ;
+    padding: 0px 10px 10px 10px;
+    
 }
